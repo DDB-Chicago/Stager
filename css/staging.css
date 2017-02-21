@@ -24,6 +24,10 @@ body {
 	height: 100%;
 }
 
+.bordered {
+	border: 2px solid #000;
+}
+
 #header-bar {
 	height: 45px;
 	float: right;
@@ -205,6 +209,7 @@ body {
 .modal-size {
     padding: 0 20px 20px;
     position: relative;
+	margin: 0;
 }
 
 .modal-header .close {

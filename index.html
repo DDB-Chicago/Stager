@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Capital One Staging</title>
+		<title>Stager</title>
 		
 		
 		<link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:400,700,900,500,300" rel="stylesheet" type="text/css">
@@ -21,24 +21,35 @@
 		<![endif]-->
 	</head>
 	<body>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/stager-1.0.0.js"></script>
+		
 		<script type="text/javascript">
-			var _sizes = [
-				[1280, 100], [600, 500], [300, 250],
-				[300, 600], [970, 250], [970, 66],
-				[640, 100], [320, 50], [728, 90]
-			];
-			var _base_url = "http://dev.ddbchi.com/Clients/CapOne/2017/February/";
+			$(document).stage({
+				//	What type of creative will be displayed {static jpegs - "Static", or HTML5 animated banners - "Motion"}
+				$unitType : "Motion", 
+		
+				//	Array that holds the sizes that are to be displayed
+				$sizes : {					
+					"s1":[300, 250]
+				},
+
+				//	The base url where the sizes are kept (Directory before sizes split)
+				$baseUrl: "http://dev.ddbchi.com/Clients/Barilla/2017/CompTest/creative/"
+			});
 		</script>
 		
 		<nav class="navbar navbar-default">
 			<div class="container-fluid"> 
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<a id="client-logo" class="navbar-brand" href="#"><img src="img/staging_logo.png" alt="brand logo" /></a>
+					<a id="client-logo" class="navbar-brand" href="#"><img src="" alt="{brand logo here}" /></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div id="campaign-name" class="col-md-6">
-					<h1 class="text-left">Capital One QuickSilver / Venture Feb 2017</h1>
+					<h1 class="text-left">{Title Goes Here}</h1>
 				</div>
 				<div class="collapse navbar-collapse" id="header-bar">	  
 					<ul id="ddb-brand" class="nav navbar-nav navbar-right">
@@ -57,8 +68,7 @@
 				<h2><strong>Creative Listing</strong></h2>
 				<hr>
 				<ul class="creative-menu">
-					<li><a class="creative-link">NCAA QuickSilver</a> <span class="size-check glyphicon glyphicon-ok"></span></li>
-					<li><a class="creative-link">NCAA Venture</a> <span class="size-check glyphicon glyphicon-ok"></span></li>
+					<li><a class="creative-link">Beige</a> <span class="size-check glyphicon glyphicon-ok"></span></li>
 				</ul>
 			</div>
 		</div>
@@ -68,13 +78,7 @@
 			
 			</div>
 		</div>
-		<div id="creative-container" class="container">
-			<div class="row rich-container">
-				<!--<div class="masthead">
-				<iframe id="mastframe" class="sizeFrame" width="971" height="251" src="about:blank" frameborder="0" scrolling="no"></iframe>
-				</div>-->
-			</div>
-		
+		<div id="creative-container" class="container">		
 			<hr>
 			<div id="creative-inner" class="row">
 				
@@ -97,10 +101,5 @@
 				</div>
 			</div>
 		</div>
-		
-		<script src="js/jquery-1.12.4.min.js"></script>
-		<script src="js/TweenMax.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/staging.js"></script>
 	</body>
 </html>

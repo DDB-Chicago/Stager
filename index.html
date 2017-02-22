@@ -28,16 +28,23 @@
 		
 		<script type="text/javascript">
 			$(document).stage({
-				//	What type of creative will be displayed {static jpegs - "Static", or HTML5 animated banners - "Motion"}
-				$unitType : "Motion", 
-		
-				//	Array that holds the sizes that are to be displayed
-				$sizes : {					
-					"s1":[300, 250]
+				//	What type of creative will be displayed {static jpegs - "Static", or HTML5 animated banners - "Motion"}		
+				$unitType:"Motion", 
+
+				//	Array that holds the sizes that are to be displayed (Can be any name, but format has to be an oject, holding associative arrays of the "name":[width, height] format)
+				$sizes: {
+					"s1":[728, 90], "s2":[300, 250]
 				},
 
+				//	The file name of each frame to be displayed (without size and frame number) - Only needed for comp flow
+				$fileName: "E63904_BRCCO_BB_Couch_",
+
+				//	The amount of frames - Only needed for comp flow
+				$numOfFiles: 5,
+
 				//	The base url where the sizes are kept (Directory before sizes split)
-				$baseUrl: "http://dev.ddbchi.com/Clients/Barilla/2017/CompTest/creative/"
+				$baseUrl: "http://dev.ddbchi.com/Clients/Barilla/2017/CompTest/"
+				//$baseUrl: "http://dev.ddbchi.com/Clients/CapOne/2017/February/"
 			});
 		</script>
 		

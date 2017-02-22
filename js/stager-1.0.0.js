@@ -41,7 +41,7 @@ $.stage = {
 		$fileName: "E63904_BRCCO_BB_Couch_",
 		
 		//	The amount of frames - Only needed for comp flow
-		$numOfFrames: 5,
+		$numOfFiles: 5,
 		
 		//	The base url where the sizes are kept (Directory before sizes split)
 		$baseUrl: "http://dev.ddbchi.com/Clients/Barilla/2017/CompTest/"
